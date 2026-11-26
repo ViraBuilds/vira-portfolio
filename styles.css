@@ -224,6 +224,7 @@ h3 { font-size: 1.15rem; font-weight: 700; }
 .check-list svg { color: #22a06b; flex-shrink: 0; margin-top: 4px; }
 .price { margin: 18px 0 0; padding-top: 14px; border-top: 1px dashed var(--border); color: var(--text); }
 .price strong { font-size: 1.15rem; color: var(--blue); }
+.price-note { margin: 8px 0 0; font-size: .92rem; line-height: 1.5; color: var(--muted); }
 
 /* ---------- Work grid ---------- */
 .work-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 22px; margin-top: 32px; }
