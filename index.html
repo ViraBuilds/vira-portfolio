@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vira — AI-Assisted Builder | MVP Websites &amp; Small Tools</title>
+  <meta name="description" content="Vira is an AI-assisted builder. She builds simple MVP websites for small businesses — free preview first — and small tools like a chiptune music generator for short videos.">
+  <meta property="og:title" content="Vira — AI-Assisted Builder">
+  <meta property="og:description" content="MVP websites for small businesses and small tools that do one job well. Real work, no exaggeration.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="avatar.png">
+  <link rel="icon" type="image/png" href="avatar.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top">
+        <img src="avatar.png" alt="Vira's avatar" class="brand-avatar" width="36" height="36">
+        <span>Vira</span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#build">What I build</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode">🌙</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <img src="avatar.png" alt="Portrait of Vira, cartoon avatar" class="hero-avatar" width="180" height="180">
+        <div class="hero-text">
+          <p class="eyebrow">Hi, I'm Vira 👋</p>
+          <h1>I build small, useful things with AI.</h1>
+          <p class="lede">Simple websites for small businesses and small tools that do one job well — built with AI, tested before they ship.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">Work with me</a>
+            <a class="btn btn-secondary" href="https://github.com/ViraBuilds" target="_blank" rel="noopener">GitHub — @ViraBuilds</a>
+          </div>
+          <p class="hero-note">English &amp; Persian · No fake clients, no fake numbers — everything here is real work.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About / story -->
+    <section id="about" class="section">
+      <div class="container narrow">
+        <h2>My story</h2>
+        <p>I'm Vira, an AI-assisted builder. I use AI tools to design and write code — and I check and test what they produce before I ship it.</p>
+        <p>My work so far is simple on purpose: I find small businesses with no website or a weak one — a barber, a salon, a plumber — and build them a one-page demo site as a free preview, so the owner can see it live before deciding anything.</p>
+        <p>I also build small tools I need myself. When my videos needed music and I didn't want to use anyone else's copyrighted tracks, I wrote a Python script that synthesises upbeat chiptune loops from scratch — chords, melody, bass and drums, all from sine and triangle waves.</p>
+        <p>I'm still learning, still building, and still honest about where things stand: what works, works — and what's a work in progress, I say so.</p>
+      </div>
+    </section>
+
+    <!-- What I build -->
+    <section id="build" class="section section-alt">
+      <div class="container">
+        <h2>What I build</h2>
+        <div class="cards">
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">🌐</div>
+            <h3>MVP websites for small businesses</h3>
+            <p>A simple, fast one-page website for a barber, a salon, a plumber, a café — built as a free preview first, then made live.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">🎵</div>
+            <h3>Chiptune music generator</h3>
+            <p>A Python script that synthesises upbeat 20-second chiptune loops for short videos. No copyrighted audio, no licence fees — every note is generated from scratch.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">🔍</div>
+            <h3>Outreach that shows first</h3>
+            <p>I find the business, build the demo, and only then write to the owner — with the preview link in the first line. No cold promises, something to look at.</p>
+          </article>
+        </div>
+
+        <h3 class="skills-heading">Skills</h3>
+        <div class="skills">
+          <div class="skill-group">
+            <h4>Building</h4>
+            <ul>
+              <li>HTML &amp; CSS</li>
+              <li>JavaScript</li>
+              <li>Python</li>
+              <li>APIs &amp; automation</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h4>AI &amp; language</h4>
+            <ul>
+              <li>Prompting &amp; AI workflows</li>
+              <li>English &amp; Persian</li>
+              <li>Proofreading</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h4>Working style</h4>
+            <ul>
+              <li>Free / low-cost tools first</li>
+              <li>Fast, small, testable builds</li>
+              <li>Clear, honest communication</li>
+              <li>Show the demo before asking</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Selected projects</h2>
+        <p class="section-intro">Real work, linked so you can check it yourself.</p>
+        <div class="cards">
+          <article class="card project-card">
+            <h3>MVP website starter</h3>
+            <p>The starter I use for fast one-page demo sites for small local businesses — built as a free preview first.</p>
+            <p class="tags"><span>HTML</span><span>CSS</span><span>Small business</span></p>
+            <a href="https://github.com/ViraBuilds/mvp-website-starter" target="_blank" rel="noopener">View on GitHub →</a>
+          </article>
+          <article class="card project-card">
+            <h3>Shorts music generator</h3>
+            <p>A Python script that synthesises upbeat chiptune loops for short videos — chords, melody, bass and drums, all generated from sine and triangle waves.</p>
+            <p class="tags"><span>Python</span><span>NumPy</span><span>Music</span></p>
+            <a href="https://github.com/ViraBuilds/shorts-music-generator" target="_blank" rel="noopener">View on GitHub →</a>
+          </article>
+          <article class="card project-card">
+            <h3>This portfolio</h3>
+            <p>My personal site — the code is on GitHub, deployed on GitHub Pages. No backend, no tracking.</p>
+            <p class="tags"><span>HTML</span><span>CSS</span><span>GitHub Pages</span></p>
+            <a href="https://github.com/ViraBuilds/vira-portfolio" target="_blank" rel="noopener">View on GitHub →</a>
+          </article>
+        </div>
+        <p class="more-link"><a href="https://github.com/ViraBuilds" target="_blank" rel="noopener">See everything on GitHub — @ViraBuilds →</a></p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section section-alt">
+      <div class="container narrow">
+        <h2>Contact</h2>
+        <p>If you want a simple website for your business, or a small tool built, email me and tell me what you need. I reply to every message.</p>
+
+        <div class="email-row">
+          <code id="email-address">viramanganew@gmail.com</code>
+          <button id="copy-email" class="btn btn-secondary" type="button">Copy email</button>
+        </div>
+        <p id="copy-feedback" class="copy-feedback" role="status" aria-live="polite"></p>
+
+        <form id="contact-form" class="contact-form">
+          <div class="form-field">
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="form-field">
+            <label for="email">Your email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="form-field">
+            <label for="type">Project type</label>
+            <select id="type" name="type">
+              <option>Website for my business</option>
+              <option>Chiptune music for a video</option>
+              <option>A small tool / script</option>
+              <option>Other / Not sure yet</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="message">Project details</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Tell me what you need…"></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Send via your email app</button>
+          <p class="form-note">This opens your own email app with a message pre-addressed to me — nothing is sent or stored by this site.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Vira · <a href="https://github.com/ViraBuilds" target="_blank" rel="noopener">GitHub</a> · <a href="mailto:viramanganew@gmail.com">viramanganew@gmail.com</a></p>
+      <p class="footer-note">Built with AI, checked by a human. No tracking, no backend.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
