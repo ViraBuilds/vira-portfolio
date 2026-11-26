@@ -87,7 +87,7 @@ h3 { font-size: 1.15rem; font-weight: 700; }
 }
 .header-inner { display: flex; align-items: center; gap: 14px; padding-top: 12px; padding-bottom: 12px; flex-wrap: wrap; }
 .brand { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 1.2rem; color: var(--text); text-decoration: none; margin-right: auto; }
-.brand-avatar { width: 36px; height: 36px; border-radius: 50%; object-fit: cover; border: 2px solid var(--yellow); }
+.brand-avatar { width: 36px; height: 36px; border-radius: 50%; object-fit: cover; border: 2px solid var(--yellow); background: var(--yellow-soft); }
 .brand-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--yellow); box-shadow: 0 0 0 3px var(--yellow-soft); }
 .site-nav { display: flex; gap: 2px; flex-wrap: wrap; }
 .site-nav a { color: var(--muted); text-decoration: none; font-size: 0.95rem; font-weight: 600; padding: 7px 11px; border-radius: 9px; min-height: 44px; display: inline-flex; align-items: center; transition: color 0.2s, background 0.2s; }
@@ -157,17 +157,10 @@ h3 { font-size: 1.15rem; font-weight: 700; }
 .btn-ghost:hover { background: var(--bg-alt); color: var(--text); }
 
 .hero-visual { position: relative; flex: 0 0 300px; display: flex; justify-content: center; }
-.avatar-wrap { position: relative; }
 .hero-avatar {
-  width: 260px; height: 260px; border-radius: 50%; object-fit: cover;
-  border: 6px solid var(--yellow); box-shadow: 0 20px 50px rgba(22, 35, 58, 0.18);
-  background: var(--yellow-soft);
+  width: 300px; height: auto; display: block;
+  filter: drop-shadow(0 24px 30px rgba(22, 35, 58, 0.20));
 }
-.avatar-ring {
-  position: absolute; inset: -16px; border-radius: 50%;
-  border: 2px dashed var(--blue); opacity: 0.45; animation: spin 40s linear infinite;
-}
-@keyframes spin { to { transform: rotate(360deg); } }
 .float-card {
   position: absolute; display: flex; align-items: center; gap: 10px;
   background: var(--card); border: 1px solid var(--border); border-radius: 14px;
@@ -304,7 +297,7 @@ h3 { font-size: 1.15rem; font-weight: 700; }
   .hero-inner { flex-direction: column; align-items: stretch; gap: 28px; }
   .hero-copy { flex: none; width: 100%; }
   .hero-visual { flex: none; width: 100%; flex-direction: column; align-items: center; gap: 14px; }
-  .hero-avatar { width: 200px; height: 200px; }
+  .hero-avatar { width: 220px; height: auto; }
   .float-card { position: static; width: 100%; max-width: 380px; }
   .float-card-1, .float-card-2, .float-card-3 { left: auto; right: auto; top: auto; bottom: auto; }
 }
@@ -312,7 +305,7 @@ h3 { font-size: 1.15rem; font-weight: 700; }
   body { font-size: 16px; }
   .container { padding: 0 16px; }
   .hero { padding: 44px 0 28px; }
-  .hero-avatar { width: 160px; height: 160px; }
+  .hero-avatar { width: 180px; height: auto; }
   .header-inner { gap: 10px; padding-top: 10px; padding-bottom: 10px; }
   /* Nav stays usable on phones as a scrollable second row (was display:none). */
   .site-nav { display: flex; order: 3; flex: 1 1 100%; flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; }
