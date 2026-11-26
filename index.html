@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vira — AI-Assisted Builder | MVP Websites &amp; Small Tools</title>
-  <meta name="description" content="Vira is an AI-assisted builder. She builds simple MVP websites for small businesses — free preview first — and small tools like a chiptune music generator for short videos.">
+  <meta name="description" content="Vira is an AI-assisted builder. She builds simple MVP websites for small businesses — free preview first, $75 to go live — and small tools like a chiptune music generator for short videos.">
   <meta property="og:title" content="Vira — AI-Assisted Builder">
   <meta property="og:description" content="MVP websites for small businesses and small tools that do one job well. Real work, no exaggeration.">
   <meta property="og:type" content="website">
@@ -12,7 +12,7 @@
   <link rel="icon" type="image/png" href="avatar.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -21,70 +21,243 @@
       <a class="brand" href="#top">
         <img src="avatar.png" alt="Vira's avatar" class="brand-avatar" width="36" height="36">
         <span>Vira</span>
+        <span class="brand-dot" aria-hidden="true"></span>
       </a>
       <nav class="site-nav" aria-label="Main navigation">
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
         <a href="#about">About</a>
-        <a href="#build">What I build</a>
-        <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
-      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode">🌙</button>
+      <a class="header-cta" href="#contact">Hire me</a>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode">
+        <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
     </div>
   </header>
 
   <main id="top">
     <!-- Hero -->
     <section class="hero">
+      <div class="hero-decor" aria-hidden="true">
+        <span class="blob blob-1" data-speed="0.06"></span>
+        <span class="blob blob-2" data-speed="-0.04"></span>
+        <span class="blob blob-3" data-speed="0.03"></span>
+        <span class="shape shape-ring" data-speed="0.08"></span>
+        <span class="shape shape-dots" data-speed="-0.06"></span>
+        <span class="shape shape-zig" data-speed="0.05"></span>
+      </div>
       <div class="container hero-inner">
-        <img src="avatar.png" alt="Portrait of Vira, cartoon avatar" class="hero-avatar" width="180" height="180">
-        <div class="hero-text">
-          <p class="eyebrow">Hi, I'm Vira 👋</p>
-          <h1>I build small, useful things with AI.</h1>
-          <p class="lede">Simple websites for small businesses and small tools that do one job well — built with AI, tested before they ship.</p>
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span>Available for small projects</p>
+          <h1>Small websites.<br>Small tools.<br><span class="highlight">Built with AI,</span><br>checked by a human.</h1>
+          <p class="lede">I'm Vira — an AI-assisted builder. I make simple one-page websites for small businesses (free preview first) and small tools that do one job well.</p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#contact">Work with me</a>
-            <a class="btn btn-secondary" href="https://github.com/ViraBuilds" target="_blank" rel="noopener">GitHub — @ViraBuilds</a>
+            <a class="btn btn-primary" href="#work">View my work
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a class="btn btn-secondary" href="#contact">Contact me</a>
+            <a class="btn btn-ghost" href="https://github.com/ViraBuilds" target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              GitHub
+            </a>
           </div>
-          <p class="hero-note">English &amp; Persian · No fake clients, no fake numbers — everything here is real work.</p>
+          <p class="hero-note">English &amp; Persian &middot; No fake clients, no fake numbers — everything here is real work.</p>
+        </div>
+        <div class="hero-visual">
+          <div class="avatar-wrap">
+            <img src="avatar.png" alt="Portrait of Vira, cartoon avatar" class="hero-avatar" width="240" height="240">
+            <span class="avatar-ring" aria-hidden="true"></span>
+          </div>
+          <div class="float-card float-card-1" data-speed="0.10">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+            <div><strong>Free preview first</strong><span>You see the site before paying</span></div>
+          </div>
+          <div class="float-card float-card-2" data-speed="-0.08">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+            <div><strong>20-sec chiptune loop</strong><span>Generated from scratch</span></div>
+          </div>
+          <div class="float-card float-card-3" data-speed="0.07">
+            <div><strong>$75</strong><span>one-time, to go live</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="stats reveal">
+          <div class="stat"><span class="stat-num" data-count="3">0</span><span class="stat-label">public repos on GitHub</span></div>
+          <div class="stat"><span class="stat-num" data-count="5">0</span><span class="stat-label">demo websites built</span></div>
+          <div class="stat"><span class="stat-num" data-count="2">0</span><span class="stat-label">languages — English &amp; Persian</span></div>
         </div>
       </div>
     </section>
 
-    <!-- About / story -->
+    <!-- Services -->
+    <section id="services" class="section">
+      <div class="container">
+        <p class="section-eyebrow reveal">Services</p>
+        <h2 class="reveal">What I can do for you</h2>
+        <p class="section-intro reveal">Three honest services. No retainers, no hidden fees — you see the work before you pay for it.</p>
+        <div class="cards">
+          <article class="card service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18M7 21h10"/></svg>
+            </div>
+            <h3>MVP website for your business</h3>
+            <p>A simple, fast one-page website for a barber, a salon, a plumber, a café — your services, prices, hours and booking link, mobile-friendly.</p>
+            <ul class="check-list">
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Free preview built first — you see it live</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Services, prices, hours &amp; booking link</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Works on phones — where your customers are</li>
+            </ul>
+            <p class="price"><strong>$75</strong> one-time to go live</p>
+          </article>
+          <article class="card service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg>
+            </div>
+            <h3>Small tools &amp; scripts</h3>
+            <p>A small tool that does one job well — built with AI, tested by me before delivery. Automation, converters, little helpers for your daily work.</p>
+            <ul class="check-list">
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>One clear job, done simply</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Tested before I hand it over</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Plain instructions included</li>
+            </ul>
+            <p class="price"><strong>Priced per job</strong> — tell me what you need</p>
+          </article>
+          <article class="card service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+            </div>
+            <h3>Chiptune music for videos</h3>
+            <p>Upbeat 20-second chiptune loops for short videos — chords, melody, bass and drums, every note generated from scratch. No copyrighted audio, no licence fees.</p>
+            <ul class="check-list">
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Original music — yours to use</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>20 seconds, made for Shorts &amp; Reels</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Delivered as a clean audio file</li>
+            </ul>
+            <p class="price"><strong>Ask for a custom loop</strong></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work samples -->
+    <section id="work" class="section section-alt">
+      <div class="container">
+        <p class="section-eyebrow reveal">Work samples</p>
+        <h2 class="reveal">Real work, linked so you can check it</h2>
+        <p class="section-intro reveal">Free demo websites I built for small UK businesses that had no website — or a weak one. Click any card to see the live demo.</p>
+        <div class="work-grid">
+          <article class="card work-card reveal">
+            <a class="work-thumb" href="https://muse.ai/s/forresters-traditional-barber-shop-xqp6vxnrn4oxv8/w1jj9hEJDl5VaxRO9O8wiPyUfqcXgBAjpABSDG8RM9A" target="_blank" rel="noopener">
+              <img src="images/forresters.png" alt="Preview of the Forresters Traditional Barber Shop demo website" loading="lazy">
+              <span class="work-thumb-tag">Live demo</span>
+            </a>
+            <div class="work-body">
+              <h3>Forresters Traditional Barber Shop</h3>
+              <p>Demo website for a barber in Barnstaple that had no website — only a booking page. Services, real prices and opening hours.</p>
+              <p class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></p>
+              <a class="work-link" href="https://muse.ai/s/forresters-traditional-barber-shop-xqp6vxnrn4oxv8/w1jj9hEJDl5VaxRO9O8wiPyUfqcXgBAjpABSDG8RM9A" target="_blank" rel="noopener">View live demo
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>
+              </a>
+            </div>
+          </article>
+          <article class="card work-card reveal">
+            <a class="work-thumb" href="https://muse.ai/s/parrotts-demo-website-xja6vxnrfaxsxaxt/_r9XtTbDanrkey_F9xhbWda6zkXi-tACMaDLz6RUKMM" target="_blank" rel="noopener">
+              <img src="images/parrotts.png" alt="Preview of the PARROTTS demo website" loading="lazy">
+              <span class="work-thumb-tag">Live demo</span>
+            </a>
+            <div class="work-body">
+              <h3>PARROTTS — Barber, Barnstaple</h3>
+              <p>Demo website for a modern barber with no website. Opening hours and the 10% student &amp; military discount, front and centre.</p>
+              <p class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></p>
+              <a class="work-link" href="https://muse.ai/s/parrotts-demo-website-xja6vxnrfaxsxaxt/_r9XtTbDanrkey_F9xhbWda6zkXi-tACMaDLz6RUKMM" target="_blank" rel="noopener">View live demo
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>
+              </a>
+            </div>
+          </article>
+          <article class="card work-card reveal">
+            <a class="work-thumb" href="https://muse.ai/s/jt-barbers-demo-website-lxi6vxnrluuxr5/qJvT2BM3nIjTQCpgXqSh-5dyJGaiCRhz-VEE_Zj5nn8" target="_blank" rel="noopener">
+              <img src="images/jt-barbers.png" alt="Preview of the JT Barbers demo website" loading="lazy">
+              <span class="work-thumb-tag">Live demo</span>
+            </a>
+            <div class="work-body">
+              <h3>JT Barbers — Frome</h3>
+              <p>Demo website for a neighbourhood barbershop with no website. Gents haircut £22, haircut &amp; beard trim £27, full weekly hours.</p>
+              <p class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></p>
+              <a class="work-link" href="https://muse.ai/s/jt-barbers-demo-website-lxi6vxnrluuxr5/qJvT2BM3nIjTQCpgXqSh-5dyJGaiCRhz-VEE_Zj5nn8" target="_blank" rel="noopener">View live demo
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>
+              </a>
+            </div>
+          </article>
+          <article class="card work-card reveal">
+            <a class="work-thumb" href="https://muse.ai/s/bath-street-salon-demo-website-exi6vxnrqed3e/2DLFlDeIpuYV7HdiFTqwuH43KSprvjHnZ0coXn32zto" target="_blank" rel="noopener">
+              <img src="images/bath-street-salon.png" alt="Preview of the Bath Street Salon demo website" loading="lazy">
+              <span class="work-thumb-tag">Live demo</span>
+            </a>
+            <div class="work-body">
+              <h3>Bath Street Salon — Frome</h3>
+              <p>Demo website for a hair salon whose old site was a single paragraph — no services, no prices, no hours. Now it has all three.</p>
+              <p class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></p>
+              <a class="work-link" href="https://muse.ai/s/bath-street-salon-demo-website-exi6vxnrqed3e/2DLFlDeIpuYV7HdiFTqwuH43KSprvjHnZ0coXn32zto" target="_blank" rel="noopener">View live demo
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>
+              </a>
+            </div>
+          </article>
+          <article class="card work-card reveal">
+            <a class="work-thumb work-thumb-tall" href="https://github.com/ViraBuilds/shorts-music-generator" target="_blank" rel="noopener">
+              <img src="images/waveform.png" alt="Waveform of a chiptune loop generated by the shorts music generator" loading="lazy">
+              <span class="work-thumb-tag">GitHub</span>
+            </a>
+            <div class="work-body">
+              <h3>Shorts music generator</h3>
+              <p>A Python script that synthesises upbeat chiptune loops for short videos — chords, melody, bass and drums, all generated from sine and triangle waves.</p>
+              <p class="tags"><span>Python</span><span>NumPy</span><span>Music</span></p>
+              <a class="work-link" href="https://github.com/ViraBuilds/shorts-music-generator" target="_blank" rel="noopener">View on GitHub
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>
+              </a>
+            </div>
+          </article>
+          <article class="card work-card reveal">
+            <a class="work-thumb" href="https://github.com/ViraBuilds/vira-portfolio" target="_blank" rel="noopener">
+              <span class="work-thumb-mock" aria-hidden="true">
+                <span class="mock-bar"><i></i><i></i><i></i></span>
+                <span class="mock-hero"></span>
+                <span class="mock-line"></span>
+                <span class="mock-line short"></span>
+                <span class="mock-btn"></span>
+              </span>
+              <span class="work-thumb-tag">GitHub</span>
+            </a>
+            <div class="work-body">
+              <h3>This portfolio</h3>
+              <p>My personal site — the code is on GitHub, deployed on GitHub Pages. Plain static HTML, CSS and JavaScript. No backend, no tracking.</p>
+              <p class="tags"><span>HTML</span><span>CSS</span><span>GitHub Pages</span></p>
+              <a class="work-link" href="https://github.com/ViraBuilds/vira-portfolio" target="_blank" rel="noopener">View on GitHub
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>
+              </a>
+            </div>
+          </article>
+        </div>
+        <p class="more-link reveal"><a href="https://github.com/ViraBuilds" target="_blank" rel="noopener">See everything on GitHub — @ViraBuilds
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </p>
+      </div>
+    </section>
+
+    <!-- About -->
     <section id="about" class="section">
       <div class="container narrow">
-        <h2>My story</h2>
-        <p>I'm Vira, an AI-assisted builder. I use AI tools to design and write code — and I check and test what they produce before I ship it.</p>
-        <p>My work so far is simple on purpose: I find small businesses with no website or a weak one — a barber, a salon, a plumber — and build them a one-page demo site as a free preview, so the owner can see it live before deciding anything.</p>
-        <p>I also build small tools I need myself. When my videos needed music and I didn't want to use anyone else's copyrighted tracks, I wrote a Python script that synthesises upbeat chiptune loops from scratch — chords, melody, bass and drums, all from sine and triangle waves.</p>
-        <p>I'm still learning, still building, and still honest about where things stand: what works, works — and what's a work in progress, I say so.</p>
-      </div>
-    </section>
-
-    <!-- What I build -->
-    <section id="build" class="section section-alt">
-      <div class="container">
-        <h2>What I build</h2>
-        <div class="cards">
-          <article class="card">
-            <div class="card-icon" aria-hidden="true">🌐</div>
-            <h3>MVP websites for small businesses</h3>
-            <p>A simple, fast one-page website for a barber, a salon, a plumber, a café — built as a free preview first, then made live.</p>
-          </article>
-          <article class="card">
-            <div class="card-icon" aria-hidden="true">🎵</div>
-            <h3>Chiptune music generator</h3>
-            <p>A Python script that synthesises upbeat 20-second chiptune loops for short videos. No copyrighted audio, no licence fees — every note is generated from scratch.</p>
-          </article>
-          <article class="card">
-            <div class="card-icon" aria-hidden="true">🔍</div>
-            <h3>Outreach that shows first</h3>
-            <p>I find the business, build the demo, and only then write to the owner — with the preview link in the first line. No cold promises, something to look at.</p>
-          </article>
+        <p class="section-eyebrow reveal">About</p>
+        <h2 class="reveal">My story</h2>
+        <div class="reveal">
+          <p>I'm Vira, an AI-assisted builder. I use AI tools to design and write code — and I check and test what they produce before I ship it.</p>
+          <p>My work so far is simple on purpose: I find small businesses with no website or a weak one — a barber, a salon, a plumber — and build them a one-page demo site as a free preview, so the owner can see it live before deciding anything.</p>
+          <p>I also build small tools I need myself. When my videos needed music and I didn't want to use anyone else's copyrighted tracks, I wrote a Python script that synthesises upbeat chiptune loops from scratch — chords, melody, bass and drums, all from sine and triangle waves.</p>
+          <p>I'm still learning, still building, and still honest about where things stand: what works, works — and what's a work in progress, I say so.</p>
         </div>
-
-        <h3 class="skills-heading">Skills</h3>
-        <div class="skills">
+        <div class="skills reveal">
           <div class="skill-group">
             <h4>Building</h4>
             <ul>
@@ -115,48 +288,21 @@
       </div>
     </section>
 
-    <!-- Projects -->
-    <section id="projects" class="section">
-      <div class="container">
-        <h2>Selected projects</h2>
-        <p class="section-intro">Real work, linked so you can check it yourself.</p>
-        <div class="cards">
-          <article class="card project-card">
-            <h3>MVP website starter</h3>
-            <p>The starter I use for fast one-page demo sites for small local businesses — built as a free preview first.</p>
-            <p class="tags"><span>HTML</span><span>CSS</span><span>Small business</span></p>
-            <a href="https://github.com/ViraBuilds/mvp-website-starter" target="_blank" rel="noopener">View on GitHub →</a>
-          </article>
-          <article class="card project-card">
-            <h3>Shorts music generator</h3>
-            <p>A Python script that synthesises upbeat chiptune loops for short videos — chords, melody, bass and drums, all generated from sine and triangle waves.</p>
-            <p class="tags"><span>Python</span><span>NumPy</span><span>Music</span></p>
-            <a href="https://github.com/ViraBuilds/shorts-music-generator" target="_blank" rel="noopener">View on GitHub →</a>
-          </article>
-          <article class="card project-card">
-            <h3>This portfolio</h3>
-            <p>My personal site — the code is on GitHub, deployed on GitHub Pages. No backend, no tracking.</p>
-            <p class="tags"><span>HTML</span><span>CSS</span><span>GitHub Pages</span></p>
-            <a href="https://github.com/ViraBuilds/vira-portfolio" target="_blank" rel="noopener">View on GitHub →</a>
-          </article>
-        </div>
-        <p class="more-link"><a href="https://github.com/ViraBuilds" target="_blank" rel="noopener">See everything on GitHub — @ViraBuilds →</a></p>
-      </div>
-    </section>
-
     <!-- Contact -->
     <section id="contact" class="section section-alt">
       <div class="container narrow">
-        <h2>Contact</h2>
-        <p>If you want a simple website for your business, or a small tool built, email me and tell me what you need. I reply to every message.</p>
+        <p class="section-eyebrow reveal">Contact</p>
+        <h2 class="reveal">Let's build something small</h2>
+        <p class="reveal">If you want a simple website for your business, or a small tool built, email me and tell me what you need. I reply to every message.</p>
 
-        <div class="email-row">
+        <div class="email-row reveal">
+          <svg class="email-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg>
           <code id="email-address">viramanganew@gmail.com</code>
           <button id="copy-email" class="btn btn-secondary" type="button">Copy email</button>
         </div>
         <p id="copy-feedback" class="copy-feedback" role="status" aria-live="polite"></p>
 
-        <form id="contact-form" class="contact-form">
+        <form id="contact-form" class="contact-form reveal">
           <div class="form-field">
             <label for="name">Your name</label>
             <input id="name" name="name" type="text" autocomplete="name" required>
@@ -187,7 +333,7 @@
 
   <footer class="site-footer">
     <div class="container">
-      <p>© 2026 Vira · <a href="https://github.com/ViraBuilds" target="_blank" rel="noopener">GitHub</a> · <a href="mailto:viramanganew@gmail.com">viramanganew@gmail.com</a></p>
+      <p>© 2026 Vira &middot; <a href="https://github.com/ViraBuilds" target="_blank" rel="noopener">GitHub</a> &middot; <a href="mailto:viramanganew@gmail.com">viramanganew@gmail.com</a></p>
       <p class="footer-note">Built with AI, checked by a human. No tracking, no backend.</p>
     </div>
   </footer>
